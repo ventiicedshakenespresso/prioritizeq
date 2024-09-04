@@ -54,7 +54,7 @@ export default function Floor() {
                     <table className="text-xs min-w-full text-left font-light text-white">
                         <thead>
                             <tr>
-                                <th>MRN</th>
+                                <th>Station</th>
                                 <th>Patient Name</th>
                                 <th>Start Time</th>
                                 <th>End Time</th>
@@ -67,7 +67,7 @@ export default function Floor() {
                                 })
                                 .map((patient) =>{
                                     return <tr key={patient._mrn}>
-                                        <td>{patient._mrn}</td>
+                                        <td>{patient.station}</td>
                                         <td>{patient.name}</td>
                                         <td>{patient.start_time}</td>
                                         <td>{patient.end_time}</td>
@@ -82,7 +82,7 @@ export default function Floor() {
                     <table className="text-xs min-w-full text-left font-light text-white">
                         <thead>
                             <tr>
-                                <th>MRN</th>
+                                <th>Station</th>
                                 <th>Patient Name</th>
                                 <th>Start Time</th>
                                 <th>End Time</th>
@@ -95,7 +95,7 @@ export default function Floor() {
                                 })
                                 .map((patient) =>{
                                     return <tr key={patient._mrn}>
-                                        <td>{patient._mrn}</td>
+                                        <td>{patient.station}</td>
                                         <td>{patient.name}</td>
                                         <td>{patient.start_time}</td>
                                         <td>{patient.end_time}</td>
@@ -110,7 +110,7 @@ export default function Floor() {
                     <table className="text-xs min-w-full text-left font-light text-white">
                         <thead>
                             <tr>
-                                <th>MRN</th>
+                                <th>Station</th>
                                 <th>Patient Name</th>
                                 <th>Start Time</th>
                                 <th>End Time</th>
@@ -123,7 +123,7 @@ export default function Floor() {
                                 })
                                 .map((patient) =>{
                                     return <tr key={patient._mrn}>
-                                        <td>{patient._mrn}</td>
+                                        <td>{patient.station}</td>
                                         <td>{patient.name}</td>
                                         <td>{patient.start_time}</td>
                                         <td>{patient.end_time}</td>
@@ -138,7 +138,7 @@ export default function Floor() {
                     <table className="text-xs min-w-full text-left font-light text-white">
                         <thead>
                             <tr>
-                                <th>MRN</th>
+                                <th>Station</th>
                                 <th>Patient Name</th>
                                 <th>Start Time</th>
                                 <th>End Time</th>
@@ -151,7 +151,7 @@ export default function Floor() {
                                 })
                                 .map((patient) =>{
                                     return <tr key={patient._mrn}>
-                                        <td>{patient._mrn}</td>
+                                        <td>{patient.station}</td>
                                         <td>{patient.name}</td>
                                         <td>{patient.start_time}</td>
                                         <td>{patient.end_time}</td>
