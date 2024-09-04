@@ -62,20 +62,11 @@ export default function Floor() {
                         </thead>
                         <tbody>
                             {
-                                // console.log(patients.filter(function(item){
-                                //     return item.pod == 1;
-                                // }))
-                                // patients.map((patient, index) =>{
-                                //     return <tr key={index}>
-                                //         <td>{patient._mrn}</td>
-                                //         <td>{patient.name}</td>
-                                //         <td>{patient.start_time}</td>
-                                //         <td>{patient.end_time}</td>
-                                //     </tr>
-                                // })
-                                
-                                patients.map((patient, index) =>{
-                                    return <tr key={index}>
+                                patients.filter((patient) => {
+                                    return patient.pod == 1;
+                                })
+                                .map((patient) =>{
+                                    return <tr key={patient._mrn}>
                                         <td>{patient._mrn}</td>
                                         <td>{patient.name}</td>
                                         <td>{patient.start_time}</td>
@@ -91,37 +82,26 @@ export default function Floor() {
                     <table className="text-xs min-w-full text-left font-light text-white">
                         <thead>
                             <tr>
-                                <th>Station#</th>
+                                <th>MRN</th>
                                 <th>Patient Name</th>
                                 <th>Start Time</th>
                                 <th>End Time</th>
                              </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>04</td>
-                                <td>April Kepner</td>
-                                <td>0600</td>
-                                <td>1000</td>
-                            </tr>
-                            <tr>
-                                <td>10</td>
-                                <td>Jo Wilson</td>
-                                <td>0620</td>
-                                <td>1020</td>
-                            </tr>
-                            <tr>
-                                <td>11</td>
-                                <td>Miranda Bailey</td>
-                                <td>0645</td>
-                                <td>1045</td>
-                            </tr>
-                            <tr>
-                                <td>03</td>
-                                <td>Andrew Deluca</td>
-                                <td>0705</td>
-                                <td>1105</td>
-                            </tr>
+                            {
+                                patients.filter((patient) => {
+                                    return patient.pod == 2;
+                                })
+                                .map((patient) =>{
+                                    return <tr key={patient._mrn}>
+                                        <td>{patient._mrn}</td>
+                                        <td>{patient.name}</td>
+                                        <td>{patient.start_time}</td>
+                                        <td>{patient.end_time}</td>
+                                    </tr>
+                                })
+                            }
                         </tbody>
                     </table>
                 </div>
@@ -130,37 +110,26 @@ export default function Floor() {
                     <table className="text-xs min-w-full text-left font-light text-white">
                         <thead>
                             <tr>
-                                <th>Station#</th>
+                                <th>MRN</th>
                                 <th>Patient Name</th>
                                 <th>Start Time</th>
                                 <th>End Time</th>
                              </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>16</td>
-                                <td>April Kepner</td>
-                                <td>0600</td>
-                                <td>1000</td>
-                            </tr>
-                            <tr>
-                                <td>17</td>
-                                <td>Jo Wilson</td>
-                                <td>0620</td>
-                                <td>1020</td>
-                            </tr>
-                            <tr>
-                                <td>01</td>
-                                <td>Miranda Bailey</td>
-                                <td>0645</td>
-                                <td>1045</td>
-                            </tr>
-                            <tr>
-                                <td>02</td>
-                                <td>Andrew Deluca</td>
-                                <td>0705</td>
-                                <td>1105</td>
-                            </tr>
+                            {
+                                patients.filter((patient) => {
+                                    return patient.pod == 3;
+                                })
+                                .map((patient) =>{
+                                    return <tr key={patient._mrn}>
+                                        <td>{patient._mrn}</td>
+                                        <td>{patient.name}</td>
+                                        <td>{patient.start_time}</td>
+                                        <td>{patient.end_time}</td>
+                                    </tr>
+                                })
+                            }
                         </tbody>
                     </table>
                 </div>
@@ -169,37 +138,26 @@ export default function Floor() {
                     <table className="text-xs min-w-full text-left font-light text-white">
                         <thead>
                             <tr>
-                                <th>Station#</th>
+                                <th>MRN</th>
                                 <th>Patient Name</th>
                                 <th>Start Time</th>
                                 <th>End Time</th>
                              </tr>
                         </thead>
                         <tbody>
-                            <tr>
-                                <td>13</td>
-                                <td>April Kepner</td>
-                                <td>0600</td>
-                                <td>1000</td>
-                            </tr>
-                            <tr>
-                                <td>14</td>
-                                <td>Jo Wilson</td>
-                                <td>0620</td>
-                                <td>1020</td>
-                            </tr>
-                            <tr>
-                                <td>15</td>
-                                <td>Miranda Bailey</td>
-                                <td>0645</td>
-                                <td>1045</td>
-                            </tr>
-                            <tr>
-                                <td>12</td>
-                                <td>Andrew Deluca</td>
-                                <td>0705</td>
-                                <td>1105</td>
-                            </tr>
+                            {
+                                patients.filter((patient) => {
+                                    return patient.pod == 4;
+                                })
+                                .map((patient) =>{
+                                    return <tr key={patient._mrn}>
+                                        <td>{patient._mrn}</td>
+                                        <td>{patient.name}</td>
+                                        <td>{patient.start_time}</td>
+                                        <td>{patient.end_time}</td>
+                                    </tr>
+                                })
+                            }
                         </tbody>
                     </table>
                 </div>
