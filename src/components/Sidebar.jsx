@@ -5,7 +5,7 @@ import { FaRegWindowClose } from "react-icons/fa";
 export default function Sidebar() {
     const [isCollapsed, setCollaspsed] = useState(false)
     return (
-        <aside className={`h-screen pt-2 bg-slate-900 text-[#f6f5f4] flex flex-col ${isCollapsed ? 'w-16' : 'w-64'} transition-all duration-250`}>
+        <aside className={`h-full pt-2 bg-slate-900 text-[#f6f5f4] flex flex-col ${isCollapsed ? 'w-16' : 'w-64'} transition-all duration-250`}>
             <div className="flex text-center items-center justify-between h-10 p-4">
                 {
                     !isCollapsed && (
